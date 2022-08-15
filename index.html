@@ -10,7 +10,6 @@
 		<link href="https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css" integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
-		<link rel="stylesheet" href="./style.scss">
 		<link rel="stylesheet" href="./main.css">
 		<!--JQuery-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -19,48 +18,12 @@
 		
 	</head>
 	<body>
-		<!-- ENTETE -->
-		<!--<header>
-			<h1>Joséphine Boyer</h1>
-            <h3>Ingénieure géomaticienne</h3>
-				
-		</header>-->
-	    <!--<article>
-			<div id="intro">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc lobortis mattis aliquam faucibus purus in massa tempor. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Egestas pretium aenean pharetra magna ac. Duis at tellus at urna condimentum mattis pellentesque id. 
-
-			</div>
-            <div class="paragraph reveal" id="parcours">
-                <div class ="title"><h2>Mon parcours</h2></div>
-				<div id="CPGE">
-					<div class="date"><h2>2017 - 2019</h2></div>
-					<div class="nameFormation reveal"><h3>Classes préparatoires aux grandes écoles</h3></div>
-					<div class="description reveal"><h3>MPSI - PSI (Mathématiques, Physique-Chimie, Sciences de l’ingénieur)</h3></div>
-				</div>
-				<div id="ENSG">
-					<div class="date"><h2>2019 - 2022</h2></div>
-					<div class="nameFormation reveal"><h3>Cursus ingénieur en géomatique<br>Spécialisation en Master 2 Carthagéo</h3></div>
-					<div class="description reveal">
-						<b>Matières enseignées : </b>cartographie et SIG, informatique, gestion de projet, télédétection, photogrammétrie, géodésie, topométrie.<br>
-						<b>Projets de programmation:</b>
-							<li>Programme de calcul de moindres carrés en Python.</li>
-							<li>Création d’une carte des pentes en Python.</li>
-							<li>Application de modélisation du comportement de poissons en Java.</li>
-							<li>Création d’un site internet : escape game cartographique.</li>
-						<br>
-						<b>Projet d’initiation à la recherche :</b> Établissement d’un processus cartographique de classification de la praticabilité (BGHOM)
-						<br><br>
-						<b>Projet de création d’une start-up :</b> Application mobile qui lutte contre l’isolement des personnes agées : étude du besoin et des solutions à apporter, budget prévisionnel.
-						<br><br>
-						<b>Création d'un magasine cartographique</b> de 60 pages et en anglais. Travail de groupe pour maquetter, créer le contenu et les cartes.
-					</div>
-				</div>
-            </div>
-		</article>-->
 			
 		<div id="fullpage">
 			<div class="section" id="nom">
 				<h1>Joséphine Boyer</h1>
+				<p>Ingénieure géomaticienne</p>
+				<img src="./img/memoji.png">
 			</div>
 			<div class="section" id="parcours">
 				<div class ="title"><h2>Mon parcours</h2></div>
@@ -170,7 +133,7 @@
 			
 			new fullpage('#fullpage', {
 				navigation : true,
-				navigationTooltips : ['Home', 'Mes cartes', 'Me contacter', 'A propos'],
+				navigationTooltips : ['Home', 'Mon parcours', 'Mes cartes', 'Me contacter', 'A propos'],
 				showActiveTooltip : true,
 				scroollingSpeed : 2000,
 				controlArrows : false,
