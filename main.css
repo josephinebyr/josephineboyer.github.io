@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+h1{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: Roboto;
+}
+
+#nom{
+    background: linear-gradient(to left, #09bad17a, #083aa765);
+    background: linear-gradient(
+    to bottom right,  
+    #71a0cf, #4b67b4, 
+    #4936b3, #e72ebf, 
+    #886ace, #00C9FF);
+    background-repeat: no-repeat;
+    background-size: 1000% 1000%;
+    animation: gradient 40s ease infinite;
+}
+@keyframes gradient { 
+    0%{background-position:0% 0%}
+    50%{background-position:100% 100%}
+    100%{background-position:0% 0%}
+  }
+
+/*Parcours*/
+.paragraph{
+    background-color: white;
+    
+
+    opacity: 0;
+    animation:fadeIn ease-in 1;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+    animation-duration: 1s;
+}
+
+#parcours{
+    margin: 4%;
+    padding: 4%;
+}
+
+
+.date{
+    font: large 30px;
+    color: rgba(62, 155, 104, 1);
+}
+.reveal{
+    position: relative;
+    transform: translateX(10000px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+  
+.reveal.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/*Maps*/
+
+.map h1{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    color: #bbdefb;
+}
+
+.map_content {
+    display: flex;
+    
+    justify-content: center; 
+    align-items: stretch; 
+    /* flex-flow: row nowrap; */ 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    align-content: stretch;
+
+    height: 90%;
+    padding: 15px;
+    gap: 5px;
+
+  }
+
+
+  .map_content > img { 
+    flex-grow:0;
+    align-self:center;
+    height: 95%;
+  }
+			
+  .map_content > p { 
+    flex-grow:0;
+    flex-shrink:1;
+    align-self:center;
+    width: 40%;
+    padding: 5%;
+    text-align: center;
+}
+
+
+
+/* Credits */
+#contact div{
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
