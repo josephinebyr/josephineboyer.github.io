@@ -101,13 +101,16 @@
 }
 
 /*Parcours*/
-#parcours, .description{
-    padding-left: 3%;
+h2{
+  font-size: large 50px;
+  color: #4936b3;
+  position: absolute;
+  top: 10%;
 }
-.date{
-    margin-top: 2%;
-    font: large 30px;
-    color: rgba(62, 155, 104, 1);
+
+#parcours, .description{
+  padding: 3%;
+  font-size: 30px;
 }
 
 /*Maps*/
