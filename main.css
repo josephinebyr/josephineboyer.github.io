@@ -5,6 +5,11 @@
     font-family: 'Roboto Slab', serif;
 }
 
+h3{
+  font-size: 4vw;
+  max-inline-size: 10px;
+}
+
 /* Style buttons */
 .btn {
   display: block;
