@@ -7,18 +7,18 @@
 
 /* Style buttons */
 .btn {
+  display: block;
+  margin: auto;
+  padding: 12px 30px;
+  width: 30vw;
   background-color: #71a0cf;
   border: solid #71a0cf;
   border-radius: 30px;
   color: white;
-  justify-items: center;
-  padding: 12px 30px;
-  width: 30vw;
-  cursor: pointer;
   font-size: 20px;
+  cursor: pointer;
 }
 
-/* Darker background on mouse-over */
 .btn:hover {
   background-color: #F0F0F0;
   border: solid #71a0cf;
@@ -122,7 +122,7 @@
 /*Parcours*/
 .title{
   font-size: 5vh;
-  color: #4936b3;
+  color: #71a0cf;
   position: absolute;
   top: 10%;
 }
@@ -133,6 +133,12 @@
 }
 
 /*Maps*/
+
+
+#cursus:hover .arrow_box {
+  visibility: visible;
+  
+}
 
 .fp-slidesNav ul {
     margin-left: 43% !important;
@@ -150,13 +156,8 @@
 }
 .arrow_box {
 	position: relative;
-	background: rgba(255,255,255,0.5);
-	text-align: center;
-  font-size: 3vh;
-  width: 30vw;
-  height: 13vh;
+  max-width: 30vw;
   left: 15vw;
-  border-radius: 15px;
   padding: 20px;
   animation-name: floating_box;
   animation-duration: 3s;
@@ -230,16 +231,14 @@
 
 #section_carte {
     font-family: "Archivo Black", sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
   
   
 #map {
-    height: 70vh;
-    width: 90vw;
+  display: block;
+  margin: auto;
+  height: 70vh;
+  width: 88vw;
 }
 
 /* Contacts */
