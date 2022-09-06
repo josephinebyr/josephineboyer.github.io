@@ -191,6 +191,10 @@
     font-weight: bold;
 }
 
+.img-responsive {
+  max-height: 100% !important;
+  margin: auto;
+}
 .map_content {
     display: flex;
     
@@ -215,13 +219,15 @@
     max-height: 90%;
   }
 			
-  .map_content > p { 
+  .map_content p { 
     flex-grow:0;
     flex-shrink:1;
     align-self:center;
     width: 40%;
     padding: 5%;
     text-align: center;
+    font-size: medium;
+    margin: auto !important;
 }
 
 
