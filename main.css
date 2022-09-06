@@ -5,6 +5,25 @@
     font-family: 'Roboto Slab', serif;
 }
 
+/* Style buttons */
+.btn {
+  background-color: #71a0cf;
+  border: solid #71a0cf;
+  border-radius: 30px;
+  color: white;
+  justify-items: center;
+  padding: 12px 30px;
+  width: 30vw;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: #F0F0F0;
+  border: solid #71a0cf;
+  color: #71a0cf
+}
 
 
 #nom{
