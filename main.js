@@ -1,4 +1,5 @@
 var map = L.map('map').setView([47.829, 1.939], 6);
+map.scrollWheelZoom.disable();
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
@@ -20,15 +21,3 @@ marker_stage_pluri.bindPopup("Ciril Group - 2021<br>Stage pluridisplinaire déve
 var icon_brgm = L.icon({iconUrl: './img/pins/brgm.png', iconSize:[39, 51.6], iconAnchor:[19.5, 25.8], popupAnchor:[0, -26] });
 var marker_brgm = L.marker([47.829, 1.939], {icon: icon_brgm}).addTo(map);
 marker_brgm.bindPopup("BRGM - 2022<br>Stage de fin d'études");
-
-
-$('.button').click(function(){
-    var buttonId = $(this).attr('id');
-    $('#modal-container').removeAttr('class').addClass(buttonId);
-    $('body').addClass('modal-active');
-  })
-  
-  $('#modal-container').click(function(){
-    $(this).addClass('out');
-    $('body').removeClass('modal-active');
-  });
