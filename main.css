@@ -5,10 +5,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-h3{
-  font-size: 4vw;
-  max-inline-size: 10px;
-}
+
 
 /* Style buttons */
 .btn {
@@ -196,43 +193,32 @@ h3{
     font-weight: bold;
 }
 
-.img-responsive {
-  max-height: 100% !important;
-  margin: auto;
-}
 .map_content {
     display: flex;
-    
     justify-content: center; 
     align-items: stretch; 
     /* flex-flow: row nowrap; */ 
     flex-direction: row; 
     flex-wrap: nowrap; 
     align-content: stretch;
-
     height: 90%;
     padding: 15px;
-    gap: 5px;
+}
 
-  }
+.map_content .img-responsive {
+    max-height: 80vh !important;
+    margin: auto;
+    margin-right: 0;
+}
 
-
-  .map_content > img { 
-    flex-grow:0;
-    align-self:center;
-    max-width: max-content;
-    max-height: 90%;
-  }
-			
-  .map_content p { 
-    flex-grow:0;
-    flex-shrink:1;
-    align-self:center;
-    width: 40%;
-    padding: 5%;
-    text-align: center;
-    font-size: medium;
-    margin: auto !important;
+.col-md-8 {
+    border-right: solid white 0.5px;
+    padding-right: 15px;
+}		
+.map_content p { 
+  margin: auto !important;
+  color: #fff;
+  font-size: medium;
 }
 
 
