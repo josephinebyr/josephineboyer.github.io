@@ -131,7 +131,7 @@
 
 #parcours, #cursus, .description{
   padding: 3%;
-  font-size: 2vh;
+  font-size: 3vh;
 }
 
 /*Maps*/
@@ -226,17 +226,23 @@
 
 #section_carte {
     font-family: "Archivo Black", sans-serif;
+    padding: 3%;
   }
   
   
 #map {
   display: block;
-  margin: auto;
+  margin-top: 10vh;
   height: 70vh;
-  width: 88vw;
+  width: 90vw;
 }
 
 /* Contacts */
+#contact{
+  color: #71a0cf;
+  padding: 3%;
+}
+
 #contact_content {
   margin: auto;
   padding: 20px;
@@ -244,13 +250,50 @@
   line-height: 3vh;
   background-color: #fff;
 }
-#contact{
-  color: #71a0cf;
-}
 
 #credits {
   margin: auto;
   margin-bottom: 1vw;
   bottom: 1vh;
 
+}
+
+.divider_contact {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider_contact svg {
+  position: relative;
+  display: block;
+  width: calc(240% + 1.3px);
+  height: 100px;
+}
+
+.divider_contact .shape-fill {
+  fill: #F1E693;
+}
+
+.divider_carte {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.divider_carte svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 70px;
+}
+
+.divider_carte .shape-fill {
+  fill: #546CB6;
 }
