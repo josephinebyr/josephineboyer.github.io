@@ -11,14 +11,15 @@
 .btn {
   display: block;
   margin: auto;
-  padding: 12px 30px;
-  width: 30vw;
   background-color: #71a0cf;
   border: solid #71a0cf;
   border-radius: 30px;
   color: #fff;
-  font-size: 20px;
+  font-size: 3vh;
   cursor: pointer;
+}
+a{
+  color: white;
 }
 
 .btn:hover {
@@ -139,7 +140,7 @@
 
 #parcours, #cursus, .description{
   padding: 3%;
-  font-size: 3vw;
+  font-size: 3vh;
 }
 
 /*Maps*/
@@ -252,10 +253,7 @@
 }
 
 /* Contacts */
-#contact{
-  color: #71a0cf;
-  padding: 3%;
-}
+
 
 #contact_content {
   margin: auto;
