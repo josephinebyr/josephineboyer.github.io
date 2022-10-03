@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+		<title>Joséphine Boyer</title>
+		<link rel="shortcut icon" type="image/png" href="img/moi.png"/>
+		<!-- CSS -->
+		<link href="https://fonts.googleapis.com/css?family=Bitter|Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.css" integrity="sha512-5MGDCtVeXPQtSGLs2lG9mkb1tWc35ZSaBgJca+YMJxOIgLUaopFR28hmwJCk0W2KR8Ydt7vg3E+KS5XwbNFmMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+		<link rel="stylesheet" href="./main.css">
+		<!--JQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!--Angular
+		<script src="lib/angular/angular.js"></script>-->
+		<!--Fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+		<link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Dancing+Script&family=Roboto+Slab:wght@200;300&display=swap" rel="stylesheet">
+		<!--Leaflet-->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ==" crossorigin=""/>
+	</head>
+	<body>
+        <div id="fullpage">
+			<div class="section" id="portfolio">
+				
+				<div class="slide map">
+					<h1>Carte de synthèse</h1>
+					<div class="map_content">
+						<div class="row">
+							<div class="col-md-8"><img class="img-responsive" src="img/afrique.png" alt="Transports en Afrique" ></div>
+							<div class="col-md-4"><p>
+								Réalisation d'une carte de synthèse qui représente les infrastructures de transports en Afrique.
+								La charte graphique à respecter est celle des atlas de la maison d'édition Autrement.
+							</p></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="slide map">
+					<h1>Carte de flux</h1>
+					<div class="map_content">
+						<div class="row">
+							<div class="col-md-8"><img class="img-responsive" src="img/flux.png" alt="Carte de flux - Austrian Airlines" ></div>
+							<div class="col-md-4"><p> Publicité pour une compagnie aérienne sous la forme d'une carte de flux.</p></div>
+						</div>
+					</div>
+					
+				</div>
+				<div class="slide map">
+					<h1>Cartographie touristique</h1>
+					<div class="map_content">
+						<div class="row">
+							<div class="col-md-8"><img class="img-responsive" src="img/carto_touristique.png" alt="Carte touristique"></div>
+							<div class="col-md-4"><p>Cartographie touristique du Boulevard Saint Michel pour le journal The guardian</p></div>
+					</div>
+					</div>
+				</div>
+				<div class="slide map">
+					<h1>Anamorphose</h1>
+					<div class="map_content">
+						<div class="row">
+							<div class="col-md-8"><img class="img-responsive" src="img/anamorphose.png" alt="Carte en anamorphose" ></div>
+							<div class="col-md-4"><p>Le but de cet exercise était de réaliser une carte d'anamorphose en noir et blanc, 
+								pour montrer les inégalités présentes sur le continent américain.</p></div>
+							</div>
+					</div>
+					
+				</div>
+				<div class="slide map">
+					<h1>Projet éditorial (1)</h1>
+					<div class="map_content">
+						<div class="row">
+							<div class="col-md-8"><img class="img-responsive" src="img/guyane.png" alt="Orpaillage en Guyane" ></div>
+							<div class="col-md-4"><p>Cette carte et la suivante ont été réalisées lors d'un projet de groupe, 
+								qui visait à créer un magasine cartographique en anglais. J'ai donc dû respecter une charte graphqiue scrupuleusement.
+							</p></div>
+					</div>
+					</div>
+				</div>
+				<div class="slide map">
+					<h1>Projet éditorial (2)</h1>
+					<div class="map_content">
+						<div class="row">
+						<img class="img-responsive" src="img/water_festivals.png" alt="Water festivals en Asie" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="retour">
+			<button><a href="./index.html#cursus">Retour</a></button>
+		</div>
+
+
+
+        <!--Fullpage.js-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.10/fullpage.min.js" integrity="sha512-Xaje5GN/tSuxnQNdbOMppDPWWpPMN0WGfay1St6ckxBqnm3hB66iVqBbLXmujadwsH9KOUVHJZ3GR9QpAEF1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script type="text/javascript">
+			
+			new fullpage('#fullpage', {
+				navigation : true,
+				navigationTooltips : ['Home', 'Mon parcours', 'Mes réalisations', 'Carte', 'Contact'],
+				
+				scroollingSpeed : 2000,
+				controlArrows : false,
+				slidesNavigation : true,
+				responsiveWidth: 1000,
+				responsiveHeight: 1000,
+				sectionsColor: ['#546CB6']
+			});
+		</script>
+		<!--Leaflet-->
+		 <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+		 integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+		 crossorigin=""></script>
+		 <!-- Icon library -->
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+		<script type="text/javascript" src="./main.js"></script>
+	</body>
+</html>

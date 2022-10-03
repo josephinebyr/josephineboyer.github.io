@@ -23,7 +23,7 @@ a{
 }
 
 .btn:hover {
-  background-color: #F0F0F0;
+  background: none;
   border: solid #71a0cf;
   color: #71a0cf
 }
@@ -127,10 +127,7 @@ a{
 }
 
 /*Parcours*/
-#parcours {
 
-  background-image: url( "./img/topo_lines_white.svg")
-}
 .title{
   font-size: 5vh;
   color: #71a0cf;
@@ -138,7 +135,7 @@ a{
   top: 10%;
 }
 
-#parcours, #cursus, .description{
+#parcours, #portfolio, .description{
   padding: 3%;
   font-size: 3vh;
 }
@@ -252,8 +249,14 @@ a{
   width: 90vw;
 }
 
-/* Contacts */
+.leaflet-popup-content {
+  font-size: 1.5vh;
+}
 
+/* Contacts */
+#contact{
+  padding: 3%;
+}
 
 #contact_content {
   margin: auto;
