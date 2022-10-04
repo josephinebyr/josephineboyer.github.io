@@ -10,6 +10,13 @@ body {
     min-height: 100vh;
     background-color: #f2eee3;
 }
+
+#titre_projets_info{
+    position: fixed;
+    top: 10vh;
+    left: 10vw;
+}
+
 .container {
     position: relative;
     width: 1160px;
@@ -106,4 +113,11 @@ body {
 }
 .container .box:hover .content p {
     transform: translateY(0px);
+}
+
+#retour{
+    position:fixed;
+    bottom: 5vh;
+    left: 5vw;
+    font-size: medium;
 }

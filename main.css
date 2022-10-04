@@ -15,7 +15,7 @@
   border: solid #71a0cf;
   border-radius: 30px;
   color: #fff;
-  font-size: 3vh;
+  min-inline-size: 3vh;
   cursor: pointer;
 }
 a{
@@ -72,7 +72,7 @@ a{
     width: 100%;
   }
   .animated-title > div div {
-    font-size: 3vmin;
+    min-inline-size: 3vmin;
     padding: 2vmin 0;
     position: absolute;
   }
@@ -137,11 +137,8 @@ a{
 
 #parcours, #portfolio, .description{
   padding: 3%;
-  font-size: 3vh;
+  min-inline-size: 3vh;
 }
-
-/*Maps*/
-
 
 #portfolio {
   color: #fff;
@@ -230,6 +227,12 @@ a{
   margin: auto !important;
 }
 
+#retour{
+  position:fixed;
+  bottom: 5vh;
+  left: 5vw;
+  font-size: medium;
+}
 
 
 /* Carte */
