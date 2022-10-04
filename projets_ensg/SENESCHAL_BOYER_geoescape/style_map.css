@@ -1,0 +1,78 @@
+/* ----- Style de la page de jeu. --------- */
+
+/* Le body est organisé en display grid pour placer les éléments de la page de jeu.*/
+body {
+    background-color: rgb(239,233,225);
+    color: rgb(87,78,72);
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin:30;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 75% 1fr;
+    grid-template-columns: 15% 60% 15%;
+    justify-content: center;
+}
+
+/* Le titre, est affiché en haut et s'étend sur 2 colonnes. */
+body h1 {
+    font-family: 'Montserrat';
+    justify-content: center;
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+
+/* La carte est affichée au centre à gauche, la valise (#objets_stockes) est à sa droite. */
+#map { 
+    grid-row: 2;
+    grid-column: 1 / span 2 ;
+}
+
+/* On utilise un display flexbox pour que les images ne se chevauchent pas. */
+#objets_stockes {
+    grid-row: 2;
+    grid-column: 3;
+    background-color: grey;
+    display: flexbox;
+    flex-direction: column;
+    justify-content : space-around;
+    margin : 20px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px grey;
+    color: rgb(239,233,225);
+    justify-self: center;
+    font-style: 'Montserrat';
+}
+
+/* On cache les images pour l'instant, elles s'afficheront lors de la partie quand le joueur aura récupéré les objets. */
+#img_cle {
+    width : 70px;
+    height: 70px;
+    visibility: hidden;
+}
+
+#img_lunettes {
+    width : 70px;
+    height: 50px;
+    visibility: hidden;
+}
+
+#img_masque {
+    width : 70px;
+    height: 70px;
+    visibility: hidden;
+}
+
+/* Le chronomètre et la zone pour que le joueur tape le code sont en bas, sous la carte. */
+body .chronometre {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+/* Cette zone ne s'affiche que lorsque le joueur est amené à taper un code. */
+#codeobjet {
+    grid-row: 3;
+    grid-column: 2;
+    visibility: hidden;
+}

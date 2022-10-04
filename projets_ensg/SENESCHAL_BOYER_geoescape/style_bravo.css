@@ -1,0 +1,65 @@
+/* ----- Style de la page de score du joueur. --------- */
+
+/* 
+BODY :
+On définit la taille du body comme étant égale à celle de la fenêtre. 
+On applique des marges "padding" sur les côtés et en haut.
+La fenêtre est organisée en grid display, avec 3 lignes et 3 colonnes.
+*/
+body {
+    background-color:rgba(167,237,255, 0.5);
+    font-size: 1em;
+    font-family: 'Montserrat';
+    color: rgb(39,128,145);
+    width: 870px;
+    height: 600px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 70% 1fr;
+    grid-template-rows: 20% 50% 30%;
+    justify-content: center;
+}
+
+/*
+Le logo du jeu est en haut à gauche, il a une marge "padding" pour ne pas être collé aux autres éléments.
+On définit sa taille pour qu'il apparaisse selon nos choix.
+*/
+#logo {
+    grid-row: 1;
+    grid-column: 1;
+    width: 150px;
+    height: 250px;
+    padding-right: 10px;
+    justify-content: center;
+}
+
+/*
+Le titre est en haut à droite, à côté du logo.
+*/
+#title {
+    grid-row: 1;
+    grid-column: 2;
+    font-family: 'Montserrat';
+    color: rgb(39,128,145);
+}
+
+/*
+La photo est à droite sous le titre.
+On redéfinit sa taille pour qu'elle ne soit pas trop grande.
+*/
+#photofinale {
+    grid-row: 2;
+    grid-column: 2;
+    width: 370px;
+    height: 280px;
+}
+
+/*
+Le message est en bas à droite, sous l'image.
+*/
+#message_validation {
+    grid-row: 3;
+    grid-column: 2;
+}

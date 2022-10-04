@@ -1,0 +1,117 @@
+/* ----- Style de la page d'accueil du jeu. --------- */
+
+/* Le body est organisé en display grid pour placer les éléments de la page.*/
+body {
+  background-color:rgb(211,245,255);
+  font-size: 1em;
+  margin-left:2%;
+  margin-right: 5%;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 20%fr 1fr;
+  grid-template-rows: 20% 10% 40% 30%;
+  justify-content: center;
+}
+
+/* Le titre est en haut à droite, écrit en gros.*/
+body #title {
+  grid-row:  1;
+  grid-column: 2;
+  font-family: 'Montserrat';
+  font-size: 3.5em;
+  color: rgb(211,245,255);
+  text-align: center;
+  background-color: rgb(39,128,145);
+}
+
+/* Le logo est en haut à gauche. */
+#logo {
+  grid-row: 1;
+  grid-column: 1;
+  resize: both;
+  margin-right: 30px;
+  margin-top: 50px;
+  justify-content: center;
+}
+
+/* Les consignes sont sous le titre à droite. */
+#consignes{
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.3em;
+  color: rgb(87,78,72);
+}
+
+/* Le formulaire d'inscription où le joueur entre son pseudo est en dessous des consignes.*/
+#inscription {
+  grid-row: 3;
+  grid-column: 2;
+  align-self: center;
+  justify-self: center;
+  padding: 5px;
+}
+
+/* La zone pour taper le texte est transparente, sauf un border en bas. */
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgba(255,255,255, 0);
+  border: none;
+  border-bottom: 2px solid rgb(87,78,72);
+}
+/* La légende du formulaire :*/
+label{
+  font-family: 'Montserrat';
+  color: rgb(87,78,72);
+}
+
+/*Le bouton play, il y a un effet quand on passe la souris dessus (disparition des bord et ombre portée).*/
+#play {
+  height: 100px;
+  width: 8em;
+  justify-self: center;
+  align-self: center;
+  padding: 5px;
+  color: white;
+  font-size: 3em;
+  background-color: rgb(182,216,116);
+  text-shadow: 0 1px 2px rgb(96, 114, 61);
+  outline:none;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+}
+#play:hover {
+  color:  white;
+  background-color:   rgb(182,216,116);
+  box-shadow: 0 1px 0 rgba(182,216,116,.1),
+              0 0 1px 1px rgba(182,216,116,.3) inset,
+              0 1px rgba(182,216,116,.4) inset,
+              0 0 5px rgb(182,216,116);
+  border-color: rgba(182,216,116, .2);
+  text-shadow: none;
+}
+
+/*Le 'hall of fame', où les meilleurs scores sont affichés. Le titre et les scores ont le même style, sauf la taille du texte.*/
+#scores {
+  grid-row: 4;
+  grid-column: 2;
+  background-color: rgb(39,128,145);
+  color: rgb(211,245,255);
+  font: 2em 'Montserrat', sans-serif;;
+  text-align: center;
+}
+
+#liste_scores {
+  grid-row: 4;
+  grid-column: 2;
+  background-color: rgb(39,128,145);
+  color: rgb(211,245,255);
+  font: 0.6em 'Montserrat', sans-serif;;
+  text-align: center;
+}
