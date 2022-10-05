@@ -135,12 +135,12 @@ a{
   top: 10%;
 }
 
-#parcours, #portfolio, .description{
+#parcours, #cursus, .description{
   padding: 3%;
   font-size: 20px;
 }
 
-#portfolio {
+#cursus {
   color: #fff;
   font-size: medium;
   background-image: url( "./img/topo_lines_bottom-left.svg"), url("./img/topo_lines_top-right.svg");
@@ -238,7 +238,7 @@ a{
 /* Carte */
 
 
-#section_carte {
+#carte {
     font-family: "Archivo Black", sans-serif;
     padding: 3%;
     ;
@@ -253,7 +253,7 @@ a{
 }
 
 .leaflet-popup-content {
-  font-size: 1.5vh;
+  font-size: 13px !important;
 }
 
 /* Contacts */
@@ -262,18 +262,19 @@ a{
 }
 
 #contact_content {
-  margin: auto;
+  margin: 40px auto;
   padding: 20px;
   text-align: center;
   line-height: 3vh;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.5);
+  box-shadow: 10px 10px 20px -8px rgba(0,0,0,0.3);
+  border-radius: 5px;
 }
 
 #credits {
-  margin: auto;
+  position: fixed;
   margin-bottom: 1vw;
   bottom: 1vh;
-
 }
 
 .divider_contact {
