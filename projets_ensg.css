@@ -35,17 +35,11 @@ body {
     transition: 0.5s;
     transform-style: preserve-3d;
     overflow: hidden;
-    margin-right: 15px;
+    margin-right: 45px;
     margin-top: 45px;
 }
-.container:hover .box {
-    transform: rotateY(25deg);
-}
-.container .box:hover ~ .box {
-    transform: rotateY(-25deg);
-}
+
 .container .box:hover {
-    transform: rotateY(0deg) scale(1.25);
     z-index: 1;
     box-shadow: 0 25px 40px rgba(0,0,0,0.5);
 }
