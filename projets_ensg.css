@@ -13,13 +13,13 @@ body {
 
 #titre_projets_info{
     position: fixed;
-    top: 10vh;
+    top: 0px;
     left: 5vw;
 }
 
 .container {
     position: relative;
-    width: 1160px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -29,8 +29,8 @@ body {
 }
 .container .box {
     position: relative;
-    width: 275px;
-    height: 275px;
+    width: 250px;
+    height: 250px;
     background: #000;
     transition: 0.5s;
     transform-style: preserve-3d;
